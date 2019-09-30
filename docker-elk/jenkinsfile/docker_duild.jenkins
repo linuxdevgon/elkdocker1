@@ -8,8 +8,8 @@ agent {
 stages {
     stage("create docker image") {
             steps {
-                dir ('elkdocker1/docker-elk/elasticsearch/') {
-                	sh 'docker-compose up'
+                dir ('elkdocker1/docker-elk/') {
+                	sh 'docker-compose up .'
                 	
                 }
             }
