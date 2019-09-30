@@ -5,8 +5,7 @@ pipeline {
 stage("create docker image") {
             steps {
                 echo " ============== start building image =================="
-                dir ('elkdocker1/docker-elk/') {
-                	#sh 'docker build . '
+                dir ('elkdocker1/docker-elk/') 
                 	sh "docker-composer build"
                     sh "docker-compose up -d"
                 }
