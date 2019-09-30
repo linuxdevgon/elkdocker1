@@ -9,7 +9,7 @@ stages {
     stage("create docker image") {
             steps {
                 dir ('elkdocker1/docker-elk/') {
-                	sh 'docker build . '
+                	sh "docker-composer build"
                 	
                 }
             }
