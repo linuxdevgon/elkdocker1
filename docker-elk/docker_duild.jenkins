@@ -1,0 +1,19 @@
+  
+properties([disableConcurrentBuilds()])
+
+pipeline {
+
+agent { 
+        label 'master'
+        }
+stages {
+    stage("create docker image") {
+            steps {
+                dir ('elkdocker1/docker-elk/') {
+                	sh "docker-compose up -d"
+                	
+                }
+            }
+        }
+    }
+}
