@@ -11,7 +11,7 @@ stages {
             steps {                  
                 	sh "git clone https://github.com/linuxdevgon/elkdocker1.git"
                   sh "cd docker-elk"
-                  sh "docker-compose up -d"               	
+                  sh "pwd"               	
                 
             }
         }
