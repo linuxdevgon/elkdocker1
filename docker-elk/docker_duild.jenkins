@@ -9,10 +9,10 @@ agent {
 stages {
     stage("create docker image") {
             steps {
-               
-                  
+                  sh "sudo rm -rf docker-elk/"
+                  sh "sudo rm -rf elkdocker1/"
                 	sh "git clone https://github.com/linuxdevgon/elkdocker1.git"
-                  sh "cd elkdocker1"
+                  sh "cd docker-elk1"
                   sh "docker-compose up -d"               	
                 
             }
