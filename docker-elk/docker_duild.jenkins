@@ -12,9 +12,10 @@ stages {
                 	sh "git clone https://github.com/linuxdevgon/elkdocker1.git"
                   dir("docker-elk") {
                    sh "pwd"
+                   sh "ls" 
             }
                   sh "pwd"
-                  sh "ls" 
+               
                 
             }
         }
