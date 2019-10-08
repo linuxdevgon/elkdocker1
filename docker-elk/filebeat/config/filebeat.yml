@@ -11,5 +11,5 @@ filebeat.inputs:
 #output.logstash:
 #  hosts: ["0.0.0.0:5044"]
 output.elasticsearch:
-  hosts: ["http://localhost:9200"]
+  hosts: ["http://localhost:9233"]
   index: "filebeat-%{[beat.version]}-%{+yyyy.MM.dd}"
