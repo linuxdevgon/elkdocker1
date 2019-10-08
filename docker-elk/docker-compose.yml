@@ -8,7 +8,7 @@ services:
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
     ports:
-      - "9200:9200"
+      - "9233:9233"
       - "9333:9333"
     environment:
       ES_JAVA_OPTS: "-Xmx512m -Xms512m"
